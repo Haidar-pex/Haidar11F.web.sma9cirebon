@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Negeri 9 Cirebon </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background-color: #f4f7fc;
+            color: #1e293b;
+        }
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header Atas (info kontak) */
+        .top-bar {
+            background-color: #0f3b5f;
+            color: white;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .contact-info span {
+            margin-right: 20px;
+        }
+        /* Navbar */
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0f3b5f;
+        }
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+        }
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #0f3b5f, #1b6b8f);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        .hero: ; p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        /* Section umum */
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #0f3b5f;
+        }
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            transition: 0.2s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            color: #0f3b5f;
+        }
+        /* Tabel Agenda */
+        .agenda-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .agenda-table th, .agenda-table td {
+            padding: 14px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .agenda-table th {
+            background-color: #eef2ff;
+            color: #0f3b5f;
+        }
+        /* Berita / Testimoni */
+        .testimoni {
+            background-color: #e6f0fa;
+        }
+        .btn {
+            background-color: #0f3b5f;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 12px;
+        }
+        .footer {
+            background-color: #0a2a42;
+            color: #ccc;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div class="container">
+        <div class="contact-info">
+            <span>📞 0811-6040-2681</span>
+            <span>✉️ info@sman9cirebon.com</span>
+        </div>
+        <div>📢 SPMB 2025/2026 dibuka 1 Juni 2026</div>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">SMAN 9 Cirebon</div>
+        <div class="nav-links">
+            <a href="#">Beranda</a>
+            <a href="#">Profil</a>
+            <a href="#keunggulan">Keunggulan</a>
+            <a href="#berita">Berita</a>
+            <a href="#spmb">SPMB</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 200px 20px 100px;
+  text-align: center;
+  color: whitesmoke;
+">
+    <div class="container">
+        <h1>SMA Negeri 9 Cirebon</h1>
+        <p>Sekolah menengah atas negeri yang membangun generasi berkarakter, berprestasi, dan siap bersaing di era global</p>
+    </div>
+</section>
+
+<!-- KEUNGGULAN KAMI -->
+<section class="section"id="keunggulan">
+    <div class="container">
+        <h2 class="section-title">Keunggulan Kami</h2>
+        <div class="card-grid">
+            <div class="card"><div class="card-icon">👨🏫</div><h3>Guru Berpengalaman</h3><p>Tenaga pendidik profesional dengan pengalaman >10 tahun</p></div>
+            <div class="card"><div class="card-icon">🏆</div><h3>Prestasi Gemilang</h3><p>Ratusan prestasi akademik & non-akademik</p></div>
+            <div class="card"><div class="card-icon">🏫</div><h3>Fasilitas Lengkap</h3><p>Lab modern, perpustakaan digital, ruang ber-AC</p></div>
+            <div class="card"><div class="card-icon">🌳</div><h3>Lingkungan Nyaman</h3><p>Taman hijau dan udara segar</p></div>
+            <div class="card"><div class="card-icon">📚</div><h3>Program Peminatan</h3><p>MIPA, IPS, dan Bahasa</p></div>
+            <div class="card"><div class="card-icon">⚽</div><h3>Ekstrakurikuler Beragam</h3><p>20+ pilihan ekskul</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- AGENDA TERDEKAT -->
+<section class="section" style="padding-top: 0;">
+    <div class="container">
+        <h2 class="section-title">Agenda Terdekat</h2>
+        <table class="agenda-table">
+            <thead>
+                <tr><th>Tanggal</th><th>Kegiatan</th><th>Keterangan</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>2 Juni 2026</td><td>Ujian akhir Semester genap</td><td>Semua kelas</td></tr>
+                <tr><td>1 Juli 2026</td><td>SPMB 2026/2027</td><td>Pendaftaran peserta didik baru</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- BERITA TERBARU -->
+<section class="section"id="berita"></section>
+    <div class="container">
+        <h2 class="section-title">Berita Terbaru</h2>
+        <div class="card-grid">
+            <div class="card"><h3>🏅 Tim Olimpiade Matematika Raih Medali Emas</h3><p>Siswa berhasil meraih medali emas Olimpiade Matematika tingkat Provinsi.</p><a href="#" class="btn">Baca</a></div>
+            <div class="card"><h3>🏭 Kunjungan Industri ke Perusahaan Teknologi</h3><p>Siswa kelas XI MIPA mengenal lebih dekat dunia industri.</p><a href="#" class="btn">Baca</a></div>
+            <div class="card"><h3>🇬🇧 Juara 1 Lomba Debat Bahasa Inggris</h3><p>Tim debat SMAN 9 Cirebon juara pertama tingkat kabupaten.</p><a href="#" class="btn">Baca</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="section testimoni">
+    <div class="container">
+        <h2 class="section-title">Apa Kata Mereka</h2>
+        <div class="card-grid">
+            <div class="card">“Pengalaman luar biasa, guru-guru peduli dan membantu siswa berkembang maksimal.”<br><strong>- Ahmad Fauzi, Alumni 2023</strong></div>
+            <div class="card">“Fasilitas sangat mendukung, perpustakaan digital lengkap dan lab modern.”<br><strong>- Siti Nurhaliza, Siswa XII MIPA</strong></div>
+            <div class="card">“Ekskul beragam membantu saya menemukan passion di robotika.”<br><strong>- Budi Santoso, Alumni 2022</strong></div>
+        </div>
+    </div>
+</section>
+
+<!-- SPMB -->
+<section class="section"id="spmb"></section>
+    <div class="container">
+        <h2 class="section-title">Pertanyaan Sering Diajukan</h2>
+        <div class="card-grid">
+            <div class="card"><h3>📅 Kapan 
+        SPMB dibuka?</h3><p>1 Juli 2026. Informasi lengkap di halaman SPMB.</p></div>
+            <div class="card"><h3>🚪 Apa saja jalur masuk?</h3><p>Zonasi, Prestasi, Afirmasi, Perpindahan tugas orang tua.</p></div>
+            <div class="card"><h3>⏰ Jam belajar?</h3><p>Senin-Kamis 06.30-15.00 WIB, Jumat 06.30-14.30 WIB.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 SMA Negeri 9 Cirebon -Jl. Pramuka No. 77, Kel. Kalijaga, Kec. Harjamukti, Kota Cirebon, Jawa Barat</p>
+        <p>📞 0811-6040-2681 | ✉️ info@sman9cirebon.com</p>
+    </div>
+</footer>
+
+</body>
+</html>
